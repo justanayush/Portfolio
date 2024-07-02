@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Jura:wght@300..700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+nav{
+  font-family: 'Julius Sans One';
+  font-weight: bold;
+  user-select: none;
+}
+
+
+.animationNav{
+  background-color: bisque;
+  transition: all ease in 2s;
+}
+.intro{
+  font-family: 'Jura';
+}
+.shadowy{
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.sidename{
+  font-family: 'Jura';
+}
+.links{
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+.links:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.links:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
