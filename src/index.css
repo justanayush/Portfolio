@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+
+*::-webkit-scrollbar {
+  display: none;
+}
 nav{
   font-family: 'Julius Sans One';
   font-weight: bold;
@@ -17,6 +21,7 @@ nav{
 }
 .intro{
   font-family: 'Jura';
+  user-select: none;
 }
 .shadowy{
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
