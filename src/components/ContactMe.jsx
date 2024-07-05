@@ -4,7 +4,7 @@ import Navbar from './Navbar'
  const ContactMe = () =>{ return (
     <>
    
-    <div className='h-screen bg-gradient-to-r from-slate-900 to-slate-700'>
+    <div id='contactme' className='h-screen bg-gradient-to-r from-slate-900 to-slate-700'>
         <Navbar />
     <h1 className='pt-40 ml-32 text-left intro text-white text-7xl'>Leave a message</h1>
     <label for="message" className="ml-[132px] my-6 block text-2xl font-medium text-gray-900 dark:text-white">Your message</label>

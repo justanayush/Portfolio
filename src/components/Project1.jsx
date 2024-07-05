@@ -5,7 +5,7 @@ import Navbar from './Navbar'
 const ProjectItem1 = () => {
     return (
 <>
-      <h1 className='ml-7 text-center intro text-white text-7xl'>Projects</h1>
+      <h1 id='projects' className='ml-7 pt-10 text-center intro text-white text-7xl'>Projects</h1>
 
         <div className='flex justify-center items-center'>
             

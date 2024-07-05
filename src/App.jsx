@@ -5,12 +5,14 @@ import Intro from "./components/Intro"
 import Navbar from "./components/Navbar"
 import Project1 from "./components/Project1"
 import Project2 from "./components/Project2"
+import Skills from "./components/Skills"
 
 const App = () => {
   
   return (
     <>
     <AboutMe />
+    <Skills />
     <Project1 />
     <Project2 />
     <ContactMe />
