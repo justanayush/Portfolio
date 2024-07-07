@@ -36,8 +36,9 @@ const Contact = () => {
 
             <input 
             type="submit" 
-            className='hover btn'
+            className='hero-btn btn'
             value='Submit'
+            placeholder='SUbmit'
             />
         </form>
     </section>

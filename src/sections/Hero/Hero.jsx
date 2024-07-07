@@ -31,16 +31,16 @@ const Hero = () => {
     </h1>
     <h2>Frontend Developer</h2>
     <span>
-        <a href="https:www.github.com/justanayush">
+        <a target="_blank"  href="https:www.github.com/justanayush">
         <img src={githubIcon} alt="github-icon" /></a>
-        <a href="https:www.linkedin.com/in/justanayush">
+        <a target="_blank" href="https:www.linkedin.com/in/ayvi">
         <img src={linkedinIcon} alt="linkedin-icon" /></a>
     </span>
     <p className={styles.description}>
         With a passion for developing modern React web apps for commercial businesses.
     </p>
     <a href={resume} download>
-    <button className='hover'>
+    <button className='hero-btn'>
         Resume
     </button>
     </a>

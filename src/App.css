@@ -1,21 +1,24 @@
 :root {
   --background-color: #fff;
-  --btn-color: #0987f2;
+  --btn-bg-color: #6225E6;
   --btn-text-color: #ffff;
   --project-card-bg: #ffffff00;
   --text-color: #222;
   --form-text-color: #555;
   --footer-text-color: #888;
+  --btn-layer-color: #000;
 }
 
 [data-theme='dark'] {
   --background-color: #222;
   --btn-color: #fff;
-  --btn-text-color: #222;
+  --btn-text-color: #fff;
+  --btn-bg-color: #000;
   --project-card-bg: #fff;
   --text-color: #fff;
   --form-text-color: #fff;
   --footer-text-color: #bbb;
+  --btn-layer-color: #fff;
 }
 
 body{
@@ -92,5 +95,93 @@ p{
   
   .sectionTitle{
     margin-bottom: 75px;
+  }
+}
+
+
+
+
+.hero-btn {
+  display: flex;
+  border-radius: 10px;
+  padding: 11px 20px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: var(--btn-text-color);
+  background: var(--btn-bg-color);
+  transition: 1s;
+  box-shadow: 6px 6px 0 var(--btn-layer-color);
+  transform: skewX(-15deg);
+  border: none;
+}
+
+.hero-btn:focus {
+  outline: none;
+}
+
+.hero-btn:hover {
+  transition: 0.5s;
+  box-shadow: 10px 10px 0 #FBC638;
+}
+
+.hero-btn .second {
+  transition: 0.5s;
+  margin-right: 0px;
+}
+
+.hero-btn:hover  .second {
+  transition: 0.5s;
+  margin-right: 45px;
+}
+
+.span {
+  transform: skewX(15deg)
+}
+
+.second {
+  width: 20px;
+  margin-left: 30px;
+  position: relative;
+  top: 12%;
+}
+
+.one {
+  transition: 0.4s;
+  transform: translateX(-60%);
+}
+
+.two {
+  transition: 0.5s;
+  transform: translateX(-30%);
+}
+
+.hero-btn:hover .three {
+  animation: color_anim 1s infinite 0.2s;
+}
+
+.hero-btn:hover .one {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.6s;
+}
+
+.hero-btn:hover .two {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.4s;
+}
+
+
+
+@keyframes color_anim {
+  0% {
+    fill: white;
+  }
+
+  50% {
+    fill: #FBC638;
+  }
+
+  100% {
+    fill: white;
   }
 }
