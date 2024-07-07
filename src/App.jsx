@@ -1,24 +1,20 @@
-import AboutMe from "./components/AboutMe"
-import ContactMe from "./components/ContactMe"
-import Footer from "./components/Footer"
-import Intro from "./components/Intro"
-import Navbar from "./components/Navbar"
-import Project1 from "./components/Project1"
-import Project2 from "./components/Project2"
-import Skills from "./components/Skills"
+import './App.css';
+import Contact from './sections/Contact/Contact';
+import Footer from './sections/Footer/Footer';
+import Hero from './sections/Hero/Hero';
+import Projects from './sections/Projects/Projects';
+import Skills from './sections/Skills/Skills';
 
-const App = () => {
-  
+function App() {
   return (
     <>
-    <AboutMe />
-    <Skills />
-    <Project1 />
-    <Project2 />
-    <ContactMe />
-    <Footer />
-    </>
-  )
-} 
- 
-export default App
+      <Hero />
+      <Projects />
+      <Skills />
+      <Contact />
+      <Footer />
+      </>
+  );
+}
+
+export default App;
