@@ -37,6 +37,16 @@ input, textarea{
     color: var(--form-text-color);
 }
 
+.fieldset{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+
+
 input[type='submit']{
     width: fit-content;
     margin: 0 auto;

@@ -9,8 +9,29 @@ import linkedinDark from '../../assets/linkedin-dark.svg';
 
 import resume from '../../assets/resume.pdf';
 import { useTheme } from '../../common/ThemeContext';
+import { useEffect, useRef } from 'react';
+import Typed from 'typed.js';
+import React from 'react';
+
 
 const Hero = () => {
+    
+    const el = useRef(null);
+    useEffect(() => {
+        const typed = new Typed(el.current, {
+            strings: ['ML Engineer', 'Cloud Enginner', 'Frontend Developer'],
+            typeSpeed: 60,
+            loop: true,
+            loopCount: Infinity,
+            showCursor:false
+         });
+         return () => {
+            typed.destroy();
+          };
+          
+    },[])
+    
+
     const { theme, toggleTheme } = useTheme();
 
     const themeIcon = theme === 'light' ? sun : moon;
@@ -29,7 +50,8 @@ const Hero = () => {
         <br />
         Vishwakarma
     </h1>
-    <h2>Frontend Developer</h2>
+<div className={styles.typed}><h2 ref={el}>Machine Learning Engineer</h2>
+    </div>
     <span>
         <a target="_blank"  href="https:www.github.com/justanayush">
         <img src={githubIcon} alt="github-icon" /></a>
@@ -37,7 +59,7 @@ const Hero = () => {
         <img src={linkedinIcon} alt="linkedin-icon" /></a>
     </span>
     <p className={styles.description}>
-        With a passion for developing modern React web apps for commercial businesses.
+    Passionate about AI, ML, and cloud technologies and strengthening my frontend development skills for seamless user experiences.
     </p>
     <a href={resume} download>
     <button className='hero-btn'>
