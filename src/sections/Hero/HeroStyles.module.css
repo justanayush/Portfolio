@@ -71,6 +71,7 @@ span{
     .container{
         flex-direction: row-reverse;
         align-items: center;
+        height: 100vh;
         justify-content: space-evenly;
     }
 
