@@ -50,7 +50,7 @@ const Hero = () => {
         <br />
         Vishwakarma
     </h1>
-<div className={styles.typed}><h2 ref={el}>Machine Learning Engineer</h2>
+<div className={styles.typed}><h2 ref={el}></h2>
     </div>
     <span>
         <a target="_blank"  href="https:www.github.com/justanayush">
