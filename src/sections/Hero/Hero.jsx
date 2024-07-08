@@ -19,7 +19,7 @@ const Hero = () => {
     const el = useRef(null);
     useEffect(() => {
         const typed = new Typed(el.current, {
-            strings: ['ML Engineer', 'Cloud Enginner', 'Frontend Developer'],
+            strings: ['ML Engineer', 'Cloud Engineer', 'Frontend Developer'],
             typeSpeed: 60,
             loop: true,
             loopCount: Infinity,
