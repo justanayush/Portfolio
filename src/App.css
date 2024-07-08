@@ -114,6 +114,12 @@ p{
   box-shadow: 6px 6px 0 var(--btn-layer-color);
   transform: skewX(-15deg);
   border: none;
+  
+}
+
+
+.text-dec{
+  text-decoration: none;
 }
 
 .hero-btn:focus {

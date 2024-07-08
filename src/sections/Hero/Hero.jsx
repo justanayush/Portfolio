@@ -62,7 +62,7 @@ const Hero = () => {
     Passionate about AI, ML, and cloud technologies and strengthening my frontend development skills for seamless user experiences.
     </p>
     <a href={resume} download>
-    <button className='hero-btn'>
+    <button  className='text-dec hero-btn'>
         Resume
     </button>
     </a>
